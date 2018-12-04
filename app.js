@@ -9,6 +9,17 @@ const app = express();
 
 const bodyParser = require('body-parser');
 
+const { Client } = require('pg')
+const client = new Client({
+	database: 'bulletinboard',
+  host: 'localhost',
+  user: process.env.POSTGRES_USER,
+	password: process.env.POSTGRES_PASSWORD,
+	port: process.env.PORT,
+})
+
+client.connect();
+
 ////////////////////////////////////////////////////////////////////////////////
 // CONNECT WITH TEMPLATE ENGINE FOLDER
 ////////////////////////////////////////////////////////////////////////////////
@@ -41,6 +52,4 @@ app.get('/', (req, res) => {
 	res.render('home');
 })
 
-app.listen(3000, () => {
-	console.log('App is running on port 3000');
-})
+app.listen(process.env.PORT)
