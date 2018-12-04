@@ -12,17 +12,17 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.donedeal.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConorJosephC/conorjosephcwebsite.git"
+    "url": "git+https://github.com/ConorJosephC/conorjosephcmywebsite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ConorJosephC/conorjosephcwebsite/issues"
+    "url": "https://github.com/ConorJosephC/conorjosephcmywebsite/issues"
   },
-  "homepage": "https://github.com/ConorJosephC/conorjosephcwebsite#readme"
+  "homepage": "https://github.com/ConorJosephC/conorjosephcmywebsite#readme"
 }
