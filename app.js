@@ -10,15 +10,19 @@ const app = express();
 const bodyParser = require('body-parser');
 
 const { Client } = require('pg')
-const client = new Client({
-	database: 'bulletinboard',
-  host: 'localhost',
-  user: process.env.POSTGRES_USER,
-	password: process.env.POSTGRES_PASSWORD,
-	port: process.env.PORT,
-})
+// const client = new Client({
+// 	database: 'bulletinboard',
+//   host: 'localhost',
+//   user: process.env.POSTGRES_USER,
+// 	password: process.env.POSTGRES_PASSWORD,
+// 	port: process.env.PORT || 5000,
+// })
 
-client.connect();
+const PORT = process.env.PORT || 5000;
+
+require('dotenv').config();
+
+// client.connect();
 
 ////////////////////////////////////////////////////////////////////////////////
 // CONNECT WITH TEMPLATE ENGINE FOLDER
@@ -52,4 +56,10 @@ app.get('/', (req, res) => {
 	res.render('home');
 })
 
-app.listen(process.env.PORT)
+app.get('/aboutme', (req, res) => {
+	res.render('aboutme');
+})
+
+const server = app.listen(PORT, () => {
+  console.log('App is running on port '+ PORT);
+})

@@ -1,0 +1,22 @@
+h1 {
+  color: red,
+}
+
+
+#homepagebackground {
+background-color: blue,
+}
+
+. texttitle
+
+h1 {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
