@@ -1,22 +1,41 @@
-h1 {
-  color: red,
-}
-
-
 #homepagebackground {
-background-color: blue,
+  background-color: black;
 }
 
-. texttitle
-
 h1 {
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-  font-size: 24px;
+  font-family: "Courier";
+  font-size: ;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
   text-align: center;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 2%;
+}
+
+h2 {
+  font-family: Courier;
+  text-align: left;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: cyan;
+}
+
+.grey {
+  color: white;
+}
+
+#profileimage {
+  height: 300px;
+  width: 400px;
+  margin-left: 5%;
+  border-radius: 10px;
 }

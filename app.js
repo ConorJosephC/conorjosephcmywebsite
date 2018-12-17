@@ -60,6 +60,14 @@ app.get('/aboutme', (req, res) => {
 	res.render('aboutme');
 })
 
+app.get('/animation', (req, res) => {
+	res.render('animation');
+})
+
+app.get('/jquery', (req, res) => {
+	res.render('jquery');
+})
+
 const server = app.listen(PORT, () => {
   console.log('App is running on port '+ PORT);
 })
